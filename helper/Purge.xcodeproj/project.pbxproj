@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4AD7AA91608DC4C00F594A2 /* com.4D.purge.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.4D.purge.HelperTool */; };
+		E4AD7AA91608DC4C00F594A2 /* com.4D.purge.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.4D.purge.HelperTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7AA11608DBEC00F594A2 /* XPCService.m */; };
 		E4AD7AC316090A3600F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A9E1608DBEC00F594A2 /* main.m */; };
 		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
 		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C32DEA16024D51002AFAB3 /* com.4D.purge.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.4D.purge.HelperTool */; };
+		E4C32DEA16024D51002AFAB3 /* com.4D.purge.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.4D.purge.HelperTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4C32E781603536C002AFAB3 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
 		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
@@ -297,18 +297,18 @@
 		E4ED7B7615E79B83002AD912 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					E4C32DCA16023A97002AFAB3 = {
-						DevelopmentTeam = Y69CWUC25B;
+						DevelopmentTeam = A86D7LTYX7;
 						ProvisioningStyle = Automatic;
 					};
 					E4CD036615E7A2C300FDC22C = {
-						DevelopmentTeam = Y69CWUC25B;
+						DevelopmentTeam = A86D7LTYX7;
 						ProvisioningStyle = Automatic;
 					};
 					E4ED7B7E15E79B83002AD912 = {
-						DevelopmentTeam = Y69CWUC25B;
+						DevelopmentTeam = A86D7LTYX7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -443,10 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y69CWUC25B;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A86D7LTYX7;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.EBAS.XPCService";
 				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Debug;
@@ -455,10 +458,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y69CWUC25B;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A86D7LTYX7;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.EBAS.XPCService";
 				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Release;
@@ -467,7 +473,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y69CWUC25B;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A86D7LTYX7;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -479,7 +486,9 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4D.purge.HelperTool;
 				PRODUCT_NAME = com.4D.purge.HelperTool;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -488,7 +497,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y69CWUC25B;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A86D7LTYX7;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -500,7 +510,9 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4D.purge.HelperTool;
 				PRODUCT_NAME = com.4D.purge.HelperTool;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -508,24 +520,33 @@
 		E4ED7B8E15E79B83002AD912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -554,24 +575,33 @@
 		E4ED7B8F15E79B83002AD912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -602,7 +632,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y69CWUC25B;
+				DEVELOPMENT_TEAM = A86D7LTYX7;
 				INFOPLIST_FILE = "App/App-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.purge.app;
@@ -617,7 +647,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y69CWUC25B;
+				DEVELOPMENT_TEAM = A86D7LTYX7;
 				INFOPLIST_FILE = "App/App-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.purge.app;
